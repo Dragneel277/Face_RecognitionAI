@@ -3,6 +3,8 @@ Installation: Provides instructions for installing dependencies using pip instal
 
 Training the Model: To train the model its necessary to put photos to be recognized in class1 and others in class2 folder After that just go to the terminal and write: python train_model.py
 
+after that set for the venv directory "python3 -m venv venv"
+
 Setting Up and Running the Flask Website:
 
 Linux Setup: Provides commands to activate the virtual environment, set Flask app (export FLASK_APP=app.py), and run the Flask server (flask run).
