@@ -27,7 +27,7 @@ model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy']
 train_datagen = ImageDataGenerator(rescale=1./255, horizontal_flip=True, zoom_range=0.2, shear_range=0.2, rotation_range=40)
 
 train_generator = train_datagen.flow_from_directory(
-    '/home/dragneel277/Desktop/Seminarios/face_recognition/data/train',  # Replace with your actual path
+    'data/train',
     target_size=(224, 224),
     batch_size=32,
     class_mode='binary'
@@ -43,7 +43,7 @@ history = model.fit(
 # Save the trained model
 model.save('your_model.h5')
 
-# Plot training history
+# Plots to explain
 plt.plot(history.history['accuracy'])
 plt.title('Model accuracy')
 plt.ylabel('Accuracy')

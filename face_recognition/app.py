@@ -21,6 +21,9 @@ def predict_face(frame):
 
     return prediction
 
+
+#Routes 
+
 # Route for the home page
 @app.route('/')
 def index():
@@ -35,6 +38,7 @@ def profile():
 @app.route('/real_time_detection')
 def real_time_detection():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
 
 # Function to generate frames for real-time detection
 def generate_frames():

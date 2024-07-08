@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Real-Time Face Recognition</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; 
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
 </head>
 <body>
     <h1>Real-Time Face Recognition</h1>
     <img src="{{ url_for('real_time_detection') }}" width="800">
+    <br><br>
+    <a href="/profile" class="button">Go to Profile</a>
 </body>
 </html>

@@ -2,11 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .profile-container p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #444;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .profile-container img {
+            max-width: 100%;
+            display: inline-block;
+            margin: 20px 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>Student Profile</h1>
-    <p>Name: Ruben</p>
-    <p>...</p>
+    <div class="profile-container">
+        <h1>Student Profile</h1>
+        <img src="../data/train/class1/4.jpeg" alt="Student Photo 1">
+        <img src="../data/train/class1/1.jpg" alt="Student Photo 2">
+        <img src="../data/train/class1/2.jpg" alt="Student Photo 3">
+        <img src="../data/train/class1/3.jpg" alt="Student Photo 4">
+        <p><strong>Name:</strong> Ruben Ferreiro</p>
+        <p><strong>University:</strong> Unimindelo</p>
+        <p><strong>Field of Study:</strong> Informatic Engineering</p>
+        <p><strong>Date of Birth:</strong> March 22, 1999 (25 years old)</p>
+        <p><strong>Current Location:</strong> Erasmus exchange in Valladolid, Spain</p>
+    </div>
 </body>
 </html>
