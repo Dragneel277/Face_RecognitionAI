@@ -1,12 +1,28 @@
-Explanation
-Installation: Provides instructions for installing dependencies using pip install -r requirements.txt
+# Face Recognition
 
-Training the Model: To train the model its necessary to put photos to be recognized in class1 and others in class2 folder After that just go to the terminal and write: python train_model.py
+## Description
+Face Recognition via image 
 
-after that set for the venv directory "python3 -m venv venv"
+## Explanation
 
-Setting Up and Running the Flask Website:
+### Installation
+To install dependencies, use the following command:
+-> pip install -r requirements.txt
 
-Linux Setup: Provides commands to activate the virtual environment, set Flask app (export FLASK_APP=app.py), and run the Flask server (flask run).
+then You have to train the model:
+-> python train_model.py
 
-Accessing the Website: Instructs how to access the Flask website through a web browser.
+Setting up and running Flask:
+set environment
+-> python3 -m venv venv
+
+activate virtual environment
+-> source venv/bin/activate
+
+Set Flask App
+-> export FLASK_APP=app.py
+
+run the flask app
+->flask run
+
+After that Just follow what the command says
